@@ -1,5 +1,9 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Josour × Brunel Project Map</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -383,3 +387,5 @@ setup();render();{const ps=pins();if(ps.length)fit(ps.map(p=>[p.lo,p.la]),...(ma
 if(location.hash==='#list')setView('list');
 let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{const t=d3.zoomTransform(svg.node());setup();draw();svg.call(zoom.transform,t)},150)});
 </script>
+
+</html>
